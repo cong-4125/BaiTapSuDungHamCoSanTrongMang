@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhap vao 1 chuoi");
+    let newStr = [];
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == str[i].toUpperCase()) {
+            newStr.push(str[i].toLowerCase());
+        } else if (str[i] == str[i].toLowerCase()) {
+            newStr.push(str[i].toUpperCase());
+        }
+    }
+    document.write(newStr);
+</script>
+</body>
+</html>
